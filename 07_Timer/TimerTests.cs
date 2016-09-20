@@ -47,20 +47,20 @@ namespace _07_Timer
         // Uncomment these specs if you want to test-drive that
         // method, then call that method from inside of ToString().
 
-        //[TestMethod]
-        //public void PadsZero()
-        //{
-        //    Assert.AreEqual("00", timer.Padded(0));
-        //}
-        //[TestMethod]
-        //public void PadsOne()
-        //{
-        //    Assert.AreEqual("01", timer.Padded(1));
-        //}
-        //[TestMethod]
-        //public void DoesNotPad()
-        //{
-        //    Assert.AreEqual("12", timer.Padded(12));
-        //}
+        [TestMethod]
+        public void PadsZero()
+        {
+            Assert.AreEqual("00", timer.Padded(0));
+        }
+        [TestMethod]
+        public void PadsOne()
+        {
+            Assert.AreEqual("01", timer.Padded(1));
+        }
+        [TestMethod]
+        public void DoesNotPad()
+        {
+            Assert.AreEqual("12", timer.Padded(12));
+        }
     }
 }
